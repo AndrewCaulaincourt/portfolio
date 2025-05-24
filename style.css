@@ -266,7 +266,10 @@ body {
   display: flex;
   justify-content: space-between;
   gap: 190px;
-  margin: 70px 0 70px;
+
+  border-top: 2px solid #ccc;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 
 .contact__content {
