@@ -1,0 +1,99 @@
+/* Об авторе на розовом фоне */
+.about__container {
+  display: flex;
+  justify-content: center;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background: #f9e6f0;
+}
+
+.about__wrapper {
+  display: flex;
+  width: 780px;
+  height: 297.5px;
+  gap: 70px;
+}
+
+.about__image {
+  width: 195px;
+  height: 195px;
+  border: 1px solid black;
+  margin-bottom: 20px;
+}
+
+.about__name {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 27px;
+  text-decoration: underline;
+  text-decoration-style: solid;
+}
+
+.about__role {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 27px;
+}
+
+.about__bio {
+  display: flex;
+  align-items: center;
+}
+
+.about__text {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 27px;
+  vertical-align: middle;
+}
+
+.about__tabel {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 27px;
+  vertical-align: middle;
+}
+
+.story {
+  display: flex;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.story__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 880px;
+  height: 400px;
+}
+
+.story__title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 1px;
+  margin-bottom: 60px;
+}
+
+.story__text-grin {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+  color: #f6dce9;
+  background: #009379;
+  width: 880px;
+  height: 36px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.story__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  width: 880px;
+  height: 36px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  gap: 10px;
+}
