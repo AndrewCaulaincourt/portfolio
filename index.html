@@ -17,26 +17,32 @@
     <header class="header">
       <div class="heder__container">
         <div class="header__wrapper">
-          <a href="#" class="header__logo">Logo</a>
-          <div class="header__menu">
+          <a href="./index.html" class="header__logo">Logo</a>
+          <nav class="header__menu">
             <a href="./about.html" class="header__menu-link">About</a>
-            <a href="#" class="header__menu-link">Work</a>
-            <a href="#" class="header__menu-link">Contact</a>
-          </div>
+            <a href="./index.html#work" class="header__menu-link">Work</a>
+            <a href="./index.html#footer" class="header__menu-link">Contact</a>
+          </nav>
         </div>
       </div>
     </header>
 
     <main>
       <section class="section-hero">
-        <div class="header__container">
+        <div class="container">
           <div class="hero__content">
-            <p class="hero__tagline">Branding | Image making</p>
-            <h1 class="hero__title">My awesome<br />portfolio</h1>
-            <p class="hero__description">
-              And I made it myself! Yes. In Figma with Anima
-            </p>
-            <div class="hero__visuals"></div>
+            <div class="hero__text">
+              <p class="hero__tagline">Branding | Image making</p>
+              <h1 class="hero__title">My awesome<br />portfolio</h1>
+              <p class="hero__description">
+                And I made it myself! Yes. In Figma with Anima
+              </p>
+            </div>
+            <div class="hero__visuals">
+              <img src="./images/pngegg.png" alt="" class="hero__grin" />
+              <img src="./images/fons_purple.svg" alt="" class="hero__yellow" />
+              <img src="./images/fons_one.png" alt="" class="hero__star" />
+            </div>
           </div>
         </div>
       </section>
@@ -160,8 +166,8 @@
         </div>
       </section>
 
-      <section class="latest-work">
-        <div class="content">
+      <section class="latest-work" id="work">
+        <div class="container">
           <div class="latest-work__container">
             <h2 class="latest-work__title">My latest work</h2>
             <div class="latest-work__grid">
@@ -300,72 +306,68 @@
           </div>
         </div>
       </section>
+    </main>
 
-      <section class="contact">
-        <div class="container">
-          <div class="contact__info">
-            <div class="contact__content">
-              <h2 class="contact__title">Let’s work together</h2>
-              <p class="contact__description">
-                This is a template Figma file, turned into code using Anima.
-                Learn more at AnimaApp.com This is a template Figma file, turned
-                into code using Anima. Learn more at AnimaApp.com
-              </p>
-              <div class="contact__socials">
-                <img
-                  src="./images/discord.png"
-                  alt="Discord"
-                  class="contact__icon"
-                />
-                <img
-                  src="./images/facebook.png"
-                  alt="Facebook"
-                  class="contact__icon"
-                />
-                <img
-                  src="./images/dribbble_one.png"
-                  alt="Dribbble"
-                  class="contact__icon"
-                />
-                <img
-                  src="./images/instagram.png"
-                  alt="Instagram"
-                  class="contact__icon"
-                />
-                <img
-                  src="./images/behance_48.png"
-                  alt="Behance"
-                  class="contact__icon"
-                />
-              </div>
-            </div>
-
-            <div class="contact__form-block">
-              <form action="#" class="contact__form">
-                <input
-                  type="text"
-                  placeholder="Name"
-                  class="contact__input-name"
-                />
-                <input
-                  type="email"
-                  placeholder="Email"
-                  class="contact__input-email"
-                />
-                <input
-                  type="text"
-                  placeholder="Type your message here"
-                  class="contact__input-buttom"
-                />
-                <button type="submit" class="contact__button">
-                  <span class="contact__button-text">Submit</span>
-                </button>
-              </form>
+    <footer class="contact" id="footer">
+      <div class="container">
+        <div class="contact__info">
+          <div class="contact__content">
+            <h2 class="contact__title">Let’s work together</h2>
+            <p class="contact__description">
+              This is a template Figma file, turned into code using Anima. Learn
+              more at AnimaApp.com This is a template Figma file, turned into
+              code using Anima. Learn more at AnimaApp.com
+            </p>
+            <div class="contact__socials">
+              <img
+                src="./images/discord.png"
+                alt="Discord"
+                class="contact__icon"
+              />
+              <img
+                src="./images/facebook.png"
+                alt="Facebook"
+                class="contact__icon"
+              />
+              <img
+                src="./images/dribbble_one.png"
+                alt="Dribbble"
+                class="contact__icon"
+              />
+              <img
+                src="./images/instagram.png"
+                alt="Instagram"
+                class="contact__icon"
+              />
+              <img
+                src="./images/behance_48.png"
+                alt="Behance"
+                class="contact__icon"
+              />
             </div>
           </div>
+
+          <div class="contact__form-block">
+            <form action="#" class="contact__form">
+              <input
+                type="text"
+                placeholder="Name"
+                class="contact__input-name"
+              />
+              <input
+                type="email"
+                placeholder="Email"
+                class="contact__input-email"
+              />
+              <textarea
+                placeholder="Type your message here"
+                class="contact__input-buttom"
+              ></textarea>
+              <button type="submit" class="contact__button">Submit</button>
+            </form>
+          </div>
         </div>
-      </section>
-    </main>
-    <footer class="footer"></footer>
+      </div>
+    </footer>
   </body>
 </html>

@@ -1,6 +1,6 @@
-/* Хедер */
-.header {
-  display: flex;
+html,
+body {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -10,7 +10,7 @@ body {
 
 /* По макету Хедер больше, чем основной контент страницы */
 .heder__container {
-  width: 1280px;
+  max-width: 1280px;
   height: 80px;
   margin: 0 auto;
 }
@@ -54,9 +54,14 @@ body {
 /* Блок текста с анимированными картинками */
 .hero__content {
   display: flex;
-  flex-direction: column;
-  padding: 100px;
+  align-items: center;
+  padding: 100px 0;
   gap: 40px;
+}
+
+.hero__text {
+  display: flex;
+  flex-direction: column;
 }
 
 .hero__tagline {
@@ -73,6 +78,8 @@ body {
   line-height: 90px;
   letter-spacing: 0%;
   vertical-align: middle;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .hero__description {
@@ -82,8 +89,48 @@ body {
   letter-spacing: 0%;
 }
 
-/* .hero__visuals {
-} */
+.hero__visuals {
+  position: relative;
+  width: 495px;
+  height: 424px;
+}
+
+/* Крутилка-вертелка */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.hero__grin {
+  width: 230px;
+  height: 230px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  animation: spin 6s linear infinite;
+}
+
+.hero__yellow {
+  width: 330px;
+  height: 330px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  animation: spin 6s linear infinite;
+}
+
+.hero__star {
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  animation: spin 0.5s linear infinite;
+}
 
 /* Блок с сылками на соцыальные сети */
 .social-media__link {
@@ -103,8 +150,7 @@ body {
 
 /* Блок с видами дизайна (картинка, заголовок, описание) */
 .section-design__container {
-  width: 999.6px;
-  height: 328px;
+  max-width: 999.6px;
   margin: 180px auto 180px;
 }
 
@@ -161,8 +207,6 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 20px;
-  width: 1080px;
-  height: 874px;
   gap: 60px;
 }
 
@@ -234,7 +278,7 @@ body {
 
 .recommendation__person {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 20px;
   margin-top: auto;
 }
@@ -306,11 +350,13 @@ body {
 .contact__form {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   gap: 20px;
+  width: 530px;
 }
 
 .contact__input-name {
-  width: 530px;
+  width: 100%;
   height: 69px;
   padding-top: 21px;
   padding-right: 30px;
@@ -321,7 +367,7 @@ body {
 }
 
 .contact__input-email {
-  width: 530px;
+  width: 100%;
   height: 69px;
   padding-top: 21px;
   padding-right: 30px;
@@ -332,7 +378,7 @@ body {
 }
 
 .contact__input-buttom {
-  width: 530px;
+  width: 100%;
   height: 231px;
   padding-top: 21px;
   padding-right: 30px;
@@ -340,11 +386,10 @@ body {
   padding-left: 30px;
   gap: 10px;
   background: #f3f3f3;
+  resize: none;
 }
 
 .contact__button {
-  width: 235px;
-  height: 80px;
   padding-top: 25px;
   padding-right: 82px;
   padding-bottom: 25px;
@@ -352,9 +397,6 @@ body {
   gap: 10px;
   margin-top: 20px;
   background: #2d2d2d;
-}
-
-.contact__button-text {
   font-weight: 600;
   font-size: 20px;
   line-height: 30px;

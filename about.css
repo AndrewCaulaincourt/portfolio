@@ -9,8 +9,7 @@
 
 .about__wrapper {
   display: flex;
-  width: 780px;
-  height: 297.5px;
+  max-width: 780px;
   gap: 70px;
 }
 
@@ -63,8 +62,7 @@
 .story__wrapper {
   display: flex;
   flex-direction: column;
-  width: 880px;
-  height: 400px;
+  max-width: 880px;
 }
 
 .story__title {
@@ -81,8 +79,6 @@
   line-height: 26px;
   color: #f6dce9;
   background: #009379;
-  width: 880px;
-  height: 36px;
   padding-top: 5px;
   padding-bottom: 5px;
 }
@@ -91,8 +87,6 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
-  width: 880px;
-  height: 36px;
   padding-top: 5px;
   padding-bottom: 5px;
   gap: 10px;
